@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Voting System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Online Voting System</h1>
+    <p>Cast your vote below. Choose wisely!</p>
+  </header>
+
+  <main>
+    <section class="candidates">
+      <h2>Candidates</h2>
+
+      <div class="candidate">
+        <input type="file" accept="image/*" onchange="loadImage(event, 'preview1')"><br>
+        <img id="preview1" src="https://placehold.co/100x100?text=Alice" alt="Candidate 1">
+        <p>Candidate 1 - Alice</p>
+        <button onclick="vote('Alice')">Vote for Alice</button>
+      </div>
+
+      <div class="candidate">
+        <input type="file" accept="image/*" onchange="loadImage(event, 'preview2')"><br>
+        <img id="preview2" src="https://placehold.co/100x100?text=Bob" alt="Candidate 2">
+        <p>Candidate 2 - Bob</p>
+        <button onclick="vote('Bob')">Vote for Bob</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Developed as part of ApexPlanet Internship</p>
+    <a href="https://www.apexplanet.in/internship/" target="_blank">Internship Website</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
